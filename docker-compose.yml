@@ -12,7 +12,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: mysql
-      MYSQL_DATABASE: selelab-admin-api
+      MYSQL_DATABASE: default-db
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
       TZ: "Asia/Tokyo"
