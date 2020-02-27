@@ -13,6 +13,9 @@
       - https://hub.docker.com/editions/community/docker-ce-desktop-windows/
       - https://docs.docker.com/docker-for-windows/
       - settings->RESOURCE->FILE SHARINGから適当なDriveを選択してチェックしてください。
+      ![image](https://user-images.githubusercontent.com/43576650/75431538-5259c900-5990-11ea-808d-ce9d196b4e46.png)
+
+
   - それ以外のWindows
     - レガシーだけど安定はしているDocker toolboxを入れてください。VMなども勝手に入れてくれます。
       - https://github.com/docker/toolbox/releases
