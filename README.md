@@ -12,6 +12,7 @@
     - Hyper-vを有効にしてからインストールしてください。コンテナをGUIで操作できるのでとても便利です。
       - https://hub.docker.com/editions/community/docker-ce-desktop-windows/
       - https://docs.docker.com/docker-for-windows/
+      - settings->RESOURCE->FILE SHARINGから適当なDriveを選択してチェックしてください。
   - それ以外のWindows
     - レガシーだけど安定はしているDocker toolboxを入れてください。VMなども勝手に入れてくれます。
       - https://github.com/docker/toolbox/releases
