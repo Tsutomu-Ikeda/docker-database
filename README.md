@@ -17,17 +17,18 @@
 
 
   - それ以外のWindows
-    - レガシーだけど安定はしているDocker toolboxを入れてください。VMなども勝手に入れてくれます。
+    - Docker toolboxを入れてください。レガシーだけど安定はしています。VMなども勝手に入れてくれます。
       - https://github.com/docker/toolbox/releases
       - https://docs.docker.com/toolbox/overview/
 - docker-composeする
   ```bash
   git clone git@github.com:Tsutomu-Ikeda/docker-database.git
   cd docker-database
+  docker network create db_sharing
   docker-compose up -d --build
   ```
 
-  たった3行だけでデータベース環境が構築できるよ！すごい！！！
+  たった4行だけでデータベース環境が構築できるよ！すごい！！！
 
   しっかりと起動しているか確認するには以下のコマンドを打てば分かる
   ```bash
