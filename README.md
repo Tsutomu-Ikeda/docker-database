@@ -24,13 +24,12 @@
   ```bash
   git clone git@github.com:Tsutomu-Ikeda/docker-database.git
   cd docker-database
-  docker network create db_sharing
   docker-compose up -d --build
   ```
 
-  たった4行だけでデータベース環境が構築できるよ！すごい！！！
+  たった3行だけでデータベース環境が構築できる！すごい！！！
 
-  しっかりと起動しているか確認するには以下のコマンドを打てば分かる
+  しっかりと起動しているか確認するために以下のコマンドで確認してみよう。StateがUpになっていれば大成功！
   ```bash
   $ docker-compose ps
      Name                   Command               State                 Ports
@@ -51,4 +50,9 @@
   mysql --host=127.0.0.1 -u user -p
   Enter password: pass
   ```
-  ホストをしっかりと指定しないと動かないから注意してね！
+  127.0.0.1でホストを指定しないと動かないから注意してね！
+
+  毎回 `mysql --host=127.0.0.1` と打つのが面倒な場合はエイリアスを `~/.bashrc` に登録しておこう。下のコマンドを実行するか、直接 `~/.bashrc` を編集すれば登録されるよ。
+  ```bash
+  cat alias mysql='mysql --host=127.0.0.1' >> ~/.bashrc
+  ```
